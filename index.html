@@ -173,7 +173,7 @@
       letter-spacing: 0.05em;
       margin-bottom: 4px;
     }
-    .pills { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
     .pill {
       display: inline-flex;
       align-items: center;
@@ -184,14 +184,47 @@
       font-weight: 700;
       white-space: nowrap;
     }
-    .detail {
+    .metric-strip {
       margin-top: auto;
-      color: #e2e8f0;
-      font-size: 13px;
+      padding: 8px 8px 6px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.65);
+      border: 1px solid #334155;
+    }
+    .metric-strip-title {
+      color: #cbd5e1;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+      gap: 6px 8px;
+    }
+    .metric-cell {
+      min-width: 0;
+    }
+    .metric-label {
+      color: #94a3b8;
+      font-size: 9px;
       font-weight: 600;
-      line-height: 1.35;
-      padding-top: 6px;
-      border-top: 1px solid #334155;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      margin-bottom: 2px;
+    }
+    .metric-val {
+      font-family: "Barlow Condensed", sans-serif;
+      color: #f8fafc;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .foot {
       margin-top: 8px;
@@ -314,7 +347,44 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Pace ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Avg ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Conv ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Mem ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Recall ✓</span></div>
-      <div class="detail">Avg $362 · Conv 62% · Member 8% · Recall 0.0% · Leads 7 · Sold 2</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Detail Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$362</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Conv</div>
+          <div class="metric-val">62%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Member</div>
+          <div class="metric-val">8%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall</div>
+          <div class="metric-val">0.0%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Leads</div>
+          <div class="metric-val">7</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Sold</div>
+          <div class="metric-val">2</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     
 
@@ -345,7 +415,44 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Pace ✓</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Avg ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Conv ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Mem ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Recall ✓</span></div>
-      <div class="detail">Avg $603 · Conv 60% · Member 19% · Recall 0.0% · Leads 11 · Sold 2</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Detail Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$603</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Conv</div>
+          <div class="metric-val">60%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Member</div>
+          <div class="metric-val">19%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall</div>
+          <div class="metric-val">0.0%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Leads</div>
+          <div class="metric-val">11</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Sold</div>
+          <div class="metric-val">2</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     
 
@@ -376,7 +483,44 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Pace ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Avg ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Conv ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Mem ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Recall ✓</span></div>
-      <div class="detail">Avg $291 · Conv 78% · Member 11% · Recall 2.2% · Leads 4 · Sold 3</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Detail Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$291</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Conv</div>
+          <div class="metric-val">78%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Member</div>
+          <div class="metric-val">11%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall</div>
+          <div class="metric-val">2.2%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Leads</div>
+          <div class="metric-val">4</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Sold</div>
+          <div class="metric-val">3</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     
 
@@ -407,7 +551,44 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Pace ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Avg ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Conv ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Mem ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Recall ✘</span></div>
-      <div class="detail">Avg $525 · Conv 52% · Member 30% · Recall 6.2% · Leads 5 · Sold 3</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Detail Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$525</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Conv</div>
+          <div class="metric-val">52%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Member</div>
+          <div class="metric-val">30%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall</div>
+          <div class="metric-val">6.2%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Leads</div>
+          <div class="metric-val">5</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Sold</div>
+          <div class="metric-val">3</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     
 
@@ -438,7 +619,44 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Pace ✘</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Avg ✓</span><span class="pill" style="background:#22c55e22;color:#22c55e;border-color:#22c55e66">Conv ✓</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Mem ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Recall ✘</span></div>
-      <div class="detail">Avg $522 · Conv 84% · Member 24% · Recall 6.1% · Leads 1 · Sold 2</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Detail Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$522</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Conv</div>
+          <div class="metric-val">84%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Member</div>
+          <div class="metric-val">24%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall</div>
+          <div class="metric-val">6.1%</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Leads</div>
+          <div class="metric-val">1</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Sold</div>
+          <div class="metric-val">2</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     </div>
       <footer class="foot">
@@ -510,7 +728,29 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Pace ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Avg ✘</span></div>
-      <div class="detail">Current revenue tier ($0) · Projected revenue tier ($0) · Avg ticket ($106)</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Revenue & Ticket</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Current revenue tier</div>
+          <div class="metric-val">$0</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Projected revenue tier</div>
+          <div class="metric-val">$0</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$106</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     
 
@@ -541,7 +781,29 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Pace ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Avg ✘</span></div>
-      <div class="detail">Current revenue tier ($0) · Projected revenue tier ($0) · Avg ticket ($79)</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Revenue & Ticket</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Current revenue tier</div>
+          <div class="metric-val">$0</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Projected revenue tier</div>
+          <div class="metric-val">$0</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$79</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     </div>
       <footer class="foot">
@@ -613,7 +875,29 @@
       </div>
       <div class="kpi-label">KPI Pulse</div>
       <div class="pills"><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Goal Pace ✘</span><span class="pill" style="background:#ef444422;color:#ef4444;border-color:#ef444466">Recall ✘</span></div>
-      <div class="detail">Revenue goal bonus: behind pace · Avg ticket: $98 · Recall rate: —</div>
+      
+      <div class="metric-strip">
+        <div class="metric-strip-title">Bonus Snapshot</div>
+        <div class="metric-row">
+          
+        <div class="metric-cell">
+          <div class="metric-label">Revenue goal bonus</div>
+          <div class="metric-val">Behind pace</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Avg ticket</div>
+          <div class="metric-val">$98</div>
+        </div>
+        
+        <div class="metric-cell">
+          <div class="metric-label">Recall rate</div>
+          <div class="metric-val">—</div>
+        </div>
+        
+        </div>
+      </div>
+      
     </article>
     </div>
       <footer class="foot">
@@ -623,7 +907,7 @@
     </div>
     </section>
       </div>
-      <div class="stamp">Updated 07/17/2026 10:46 AM · rotates every 20s (3 boards) · page refresh 5m</div>
+      <div class="stamp">Updated 07/17/2026 10:48 AM · rotates every 20s (3 boards) · page refresh 5m</div>
     </div>
   </div>
   
